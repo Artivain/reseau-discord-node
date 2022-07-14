@@ -5,8 +5,7 @@
  */
 class ReseauDiscordAPI {
 	constructor(baseUrl: string = "https://api-rd.artivain.com") {
-		console.log(baseUrl);
-		this.baseUrl = baseUrl;
+		this.setBaseUrl(baseUrl);
 	}
 
 	baseUrl: string;

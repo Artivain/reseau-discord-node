@@ -1,4 +1,7 @@
 # reseau-discord-node
+[![wakatime](https://wakatime.com/badge/github/Artivain/reseau-discord-node.svg?style=for-the-badge)](https://wakatime.com/badge/github/Artivain/reseau-discord-node)
+[![CodeFactor](https://www.codefactor.io/repository/github/artivain/reseau-discord-node/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/artivain/reseau-discord-node)
+
 Node.js module for interacting with the Réseau Discord Artivain API.
 
 ## How to use

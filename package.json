@@ -1,8 +1,9 @@
 {
   "name": "reseau-discord",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js package to interact with the Réseau Discord Artivain API. Official one or selfhosted.",
   "main": "dist/index.js",
+	"types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "test": "tsc && node testing.js",

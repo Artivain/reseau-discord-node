@@ -47,3 +47,5 @@ rd.remove("suspect", "382869186042658818")
 	.catch(error => {
 		// ...
 	});
+
+console.log(rd.userAgent);

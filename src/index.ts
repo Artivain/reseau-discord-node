@@ -1,4 +1,13 @@
 import axios from "axios";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const { version } = require('../package.json');
+
+const USER_AGENT: string = "ReseauDiscordNode/" + version;
+
+// Set User-Agent for requests to the API
+axios.defaults.headers.common["User-Agent"] = USER_AGENT;
 
 /**
  * Helper for using Réseau Discord Artivain API.
@@ -12,6 +21,7 @@ export class ReseauDiscordAPI {
 
 	baseUrl: string;
 	credentials?: ReseauDiscordAPICredentials;
+	readonly userAgent: string = USER_AGENT;
 
 	/**
 	 * Set base URL to use for the API

@@ -171,7 +171,7 @@ export class ReseauDiscordAPI {
 	 * @returns {Promise.<String>}
 	 * @since 1.0.0
 	 */
-	dbName = async (): Promise<String> => {
+	dbName = async (): Promise<string> => {
 		const response = await axios({
 			url: `${this.baseUrl}/v1/ping`,
 			method: "GET",
@@ -216,4 +216,4 @@ export default ReseauDiscordAPI;
 function isValidId(id: string): boolean {
 	if (isNaN(parseInt(id)) || id.length < 18) return false;
 	return true;
-};
+}

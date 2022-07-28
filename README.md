@@ -1,4 +1,15 @@
 # reseau-discord-node
+[![wakatime](https://wakatime.com/badge/github/Artivain/reseau-discord-node.svg?style=for-the-badge)](https://wakatime.com/badge/github/Artivain/reseau-discord-node)
+[![CodeFactor](https://www.codefactor.io/repository/github/artivain/reseau-discord-node/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/artivain/reseau-discord-node)
+<br>
+[![npm](https://img.shields.io/npm/v/reseau-discord?color=green&label=Latest%20version&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/reseau-discord)
+![npm](https://img.shields.io/npm/dm/reseau-discord?label=Monthly%20downloads&logo=npm&style=for-the-badge)
+![npm](https://img.shields.io/npm/dt/reseau-discord?label=Total%20downloads&logo=npm&style=for-the-badge)
+<br>
+[![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/reseau-discord/axios?logoColor=white&style=for-the-badge)](https://axios-http.com/)
+<br>
+[![Discord](https://img.shields.io/discord/784679956717240391?label=Discord%20support%20server&style=for-the-badge&logo=discord&logoColor=white)](https://discord.artivain.com)
+
 Node.js module for interacting with the Réseau Discord Artivain API.
 
 ## How to use

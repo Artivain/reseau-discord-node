@@ -8,6 +8,7 @@
   "scripts": {
     "test": "tsc && node testing.js",
     "build": "npx tsc",
+		"prepublish": "tsc",
     "upgrade": "ncu -u && npm i"
   },
   "repository": {

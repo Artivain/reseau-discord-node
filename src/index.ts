@@ -27,6 +27,7 @@ export class ReseauDiscordAPI {
 	 * Set base URL to use for the API
 	 * @param {String} baseUrl
 	 * @since 1.0.0
+	 * @method
 	 */
 	setBaseUrl = (baseUrl: string): ReseauDiscordAPI => {
 		if (baseUrl.endsWith("/")) baseUrl = baseUrl.slice(0, -1);
@@ -39,6 +40,7 @@ export class ReseauDiscordAPI {
 	 * - Required for more advanced functions
 	 * @param {ReseauDiscordAPICredentials} credentials
 	 * @since 1.0.0
+	 * @method
 	 */
 	setCredentials = (credentials: ReseauDiscordAPICredentials): ReseauDiscordAPI => {
 		this.credentials = credentials;
@@ -48,6 +50,7 @@ export class ReseauDiscordAPI {
 	/**
 	 * Check if id is on a list
 	 * @since 1.0.0
+	 * @method
 	 */
 	check = async (id: string): Promise<{
 		dbName: string,
@@ -108,6 +111,7 @@ export class ReseauDiscordAPI {
 	 * @param {String} id
 	 * @returns {Promise.<boolean>}
 	 * @since 1.0.0
+	 * @method
 	 */
 	add = async (list: "suspect" | "blacklist", id: string): Promise<boolean> => {
 		if (!isValidId(id)) throw new Error("ID is not valid");
@@ -131,6 +135,7 @@ export class ReseauDiscordAPI {
 	 * @param {String} id
 	 * @returns {Promise.<boolean>}
 	 * @since 1.0.0
+	 * @method
 	 */
 	remove = async (list: "suspect" | "blacklist", id: string): Promise<boolean> => {
 		if (!isValidId(id)) throw new Error("ID is not valid");
@@ -152,6 +157,7 @@ export class ReseauDiscordAPI {
 	 * Ping the API to check if online and available
 	 * @returns {Promise.<boolean>}
 	 * @since 1.0.0
+	 * @method
 	 */
 	ping = async (): Promise<boolean> => {
 		const response = await axios({
@@ -170,6 +176,7 @@ export class ReseauDiscordAPI {
 	 * Get the database name of the API
 	 * @returns {Promise.<String>}
 	 * @since 1.0.0
+	 * @method
 	 */
 	dbName = async (): Promise<string> => {
 		const response = await axios({

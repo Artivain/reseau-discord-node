@@ -25,11 +25,10 @@ export class ReseauDiscordAPI {
 
 	/**
 	 * Set base URL to use for the API
-	 * @param {String} baseUrl
 	 * @since 1.0.0
 	 * @method
 	 */
-	setBaseUrl = (baseUrl: string): ReseauDiscordAPI => {
+	setBaseUrl = (baseUrl: string): this => {
 		if (baseUrl.endsWith("/")) baseUrl = baseUrl.slice(0, -1);
 		this.baseUrl = baseUrl;
 		return this;
@@ -42,7 +41,7 @@ export class ReseauDiscordAPI {
 	 * @since 1.0.0
 	 * @method
 	 */
-	setCredentials = (credentials: ReseauDiscordAPICredentials): ReseauDiscordAPI => {
+	setCredentials = (credentials: ReseauDiscordAPICredentials): this => {
 		this.credentials = credentials;
 		return this;
 	}
@@ -107,9 +106,6 @@ export class ReseauDiscordAPI {
 
 	/**
 	 * Add an ID to a list
-	 * @param {"suspect"|"blacklist"} list
-	 * @param {String} id
-	 * @returns {Promise.<boolean>}
 	 * @since 1.0.0
 	 * @method
 	 */
@@ -131,9 +127,6 @@ export class ReseauDiscordAPI {
 
 	/**
 	 * Remove an ID from a list
-	 * @param {"suspect"|"blacklist"} list
-	 * @param {String} id
-	 * @returns {Promise.<boolean>}
 	 * @since 1.0.0
 	 * @method
 	 */
@@ -155,7 +148,6 @@ export class ReseauDiscordAPI {
 
 	/**
 	 * Ping the API to check if online and available
-	 * @returns {Promise.<boolean>}
 	 * @since 1.0.0
 	 * @method
 	 */
@@ -174,7 +166,6 @@ export class ReseauDiscordAPI {
 
 	/**
 	 * Get the database name of the API
-	 * @returns {Promise.<String>}
 	 * @since 1.0.0
 	 * @method
 	 */

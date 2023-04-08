@@ -1,14 +1,14 @@
 {
   "name": "reseau-discord",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Node.js package to interact with the Réseau Discord Artivain API. Official one or selfhosted.",
   "main": "dist/index.js",
-	"types": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "test": "tsc && node testing.js",
     "build": "npx tsc",
-		"prepublish": "tsc",
+    "prepublish": "tsc",
     "upgrade": "ncu -u && npm i"
   },
   "repository": {
@@ -31,11 +31,12 @@
   },
   "homepage": "https://github.com/Artivain/reseau-discord-node#readme",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.3.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19",
-    "npm-check-updates": "^16.0.1",
-    "typescript": "^4.7.4"
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "npm-check-updates": "^16.10.7",
+    "typescript": "^5.0.4"
   }
 }
